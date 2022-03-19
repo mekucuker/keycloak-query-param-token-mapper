@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'mekucuker'
+version 'v1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    setProperty("keycloakVersion", "16.1.0")
+}
+
+dependencies {
+    compileOnly "org.keycloak:keycloak-services:${keycloakVersion}"
+    compileOnly "org.keycloak:keycloak-server-spi:${keycloakVersion}"
+    compileOnly "org.keycloak:keycloak-server-spi-private:${keycloakVersion}"
+}
