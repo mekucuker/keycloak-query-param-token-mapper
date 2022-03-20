@@ -14,6 +14,7 @@ ext {
 }
 
 dependencies {
+    compileOnly "org.keycloak:keycloak-core:${keycloakVersion}"
     compileOnly "org.keycloak:keycloak-services:${keycloakVersion}"
     compileOnly "org.keycloak:keycloak-server-spi:${keycloakVersion}"
     compileOnly "org.keycloak:keycloak-server-spi-private:${keycloakVersion}"
